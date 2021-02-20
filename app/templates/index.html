@@ -8,5 +8,13 @@
     <title>Uhondo | Home of the latest news</title>
     {% endif %}
   </head>
-  <body></body>
+  <body>
+    <!-- US ARTICLES SECTION-->
+    <h3>US ARTICLES</h3>
+    <ul>
+      {%for us_article in us%}
+      <li>{{us_article.title}}</li>
+      {% endfor %}
+    </ul>
+  </body>
 </html>

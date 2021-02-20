@@ -3,7 +3,7 @@ from models import article
 Article = article.Article
 
 
-class ArticleTest(unittest.Testcase):
+class ArticleTest(unittest.TestCase):
     '''
     Test class to test the behaviour of Article class
     '''
