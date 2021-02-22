@@ -1,0 +1,10 @@
+{% extends 'bootstrap/base.html'%}
+
+<!-- Navbar block  -->
+{% block navbar %} {% include 'navbar.html' %} {% endblock %} { {%- block
+content %} {{super()}} {%- block footer %}
+<footer>
+  &copy; 2021 ,
+  <a href="http://obscure-savannah-56809.herokuapp.com/">THiNC</a>.
+</footer>
+{%- endblock footer %} {%- endblock content %}

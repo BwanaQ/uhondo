@@ -1,21 +1,21 @@
-{% import 'macros.html' as macro %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>Uhondo | Home of the latest news</title>
-    {% endif %}
-  </head>
-  <body>
-    <!-- US ARTICLES SECTION-->
-    <h3>ALL SOURCES</h3>
-    <ul>
-      {%for source in sources %}
-      <li><a href="{{source.url}}">{{source.name}}</a></li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{%extends 'base.html'%} {% import 'macros.html' as macro %} {% block content %}
+<!-- SOURCES AREA-->
+<div class="row">
+  {%for source in sources %}
+  <div class="col-sm-4">
+    <div class="card" style="background-color: #cbc0d3">
+      <div class="card-body">
+        <h5 class="card-title">{{source.name}}</h5>
+        <a
+          href="{{source.url}}"
+          target="_blank"
+          class="btn btn-primary btn-block"
+          >View Site</a
+        >
+        <a href="#" class="btn btn-success btn-block">View Articles</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{%endblock%}
