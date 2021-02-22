@@ -7,6 +7,7 @@
 ## Description
 
 This project is a Flask application that consumes the [News API](https://newsapi.org/) and displays various news sources, display trending articles and a link to the article.
+A live demo is deployed [Here](https://uhondosasa.herokuapp.com)
 
 ## User Stories
 
