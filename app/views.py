@@ -15,3 +15,14 @@ def index():
     all_sources = get_sources()
     title = 'Uhondo | Home of the latest News'
     return render_template('index.html', title=title, sources=all_sources)
+
+
+@app.route('/source/<string:id>')
+def source(id):
+    '''
+    View aticles from one source function
+    '''
+    source = get_articles(id)
+    #title = f'{article.name}'
+
+    return render_template('source.html',  source=source)
