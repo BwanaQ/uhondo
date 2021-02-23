@@ -7,11 +7,14 @@
 <!-- Content block -->
 <!-- SOURCES AREA-->
 <div class="row">
+  <div class="col-sm-12 text-center">
+    <h2>Displaying News Sources</h2>
+  </div>
   {%for source in sources %}
   <div class="col-sm-4">
     <div class="card" style="background-color: #cbc0d3">
       <div class="card-body">
-        <h5 class="card-title">{{source.name}}</h5>
+        <h4 class="card-title text-center"><strong>{{source.name}}</strong></h4>
         <a
           href="{{source.url}}"
           target="_blank"
