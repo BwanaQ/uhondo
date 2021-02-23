@@ -20,5 +20,5 @@ def source(id):
     View aticles from one source function
     '''
     source = get_articles(id)
-
-    return render_template('source.html',  source=source)
+    title = 'Uhondo | viewing sources'
+    return render_template('source.html',  title=title, source=source)
